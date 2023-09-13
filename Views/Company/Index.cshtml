@@ -1,0 +1,21 @@
+﻿@model CompanyModel
+
+@{
+    ViewData["Title"] = "Cats Company Main Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Cats Company Main Page</h1>
+    <p>this is a new page for laba number #1</p>
+
+
+    <form class="text-center" method="post" asp-controller="Company" >
+
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+
+        <input type="submit" value="This is my name" />
+        
+    </form>
+
+</div>
