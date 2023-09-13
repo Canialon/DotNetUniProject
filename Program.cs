@@ -13,8 +13,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
+app.UseHttpsRedirection(); //for pereadresations
+app.UseStaticFiles(); //  in wwwroot
 
 app.UseRouting();
 
