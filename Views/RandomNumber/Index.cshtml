@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Random number";
+}
+
+    <h1>Here you can generate random number from 0 to 100:</h1>
+    <p id="randomNumberDisplay">Click the button to generate a random number.</p>
+    <button id="generateButton">Generate random number</button>
+
+    <script>
+        document.getElementById("generateButton").addEventListener("click", function () {
+            // Generate rundom number from 0 to 100
+            var randomNumber = Math.floor(Math.random() * 101);
+
+            // Display random number
+            document.getElementById("randomNumberDisplay").textContent = "Random Number: " + randomNumber;
+        });
+    </script>
+
